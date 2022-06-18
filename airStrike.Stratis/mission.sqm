@@ -1,0 +1,337 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=48;
+	};
+	class Camera
+	{
+		pos[]={2540.7073,192.95638,1010.475};
+		dir[]={-0.45720661,-0.77255309,0.44059494};
+		up[]={-0.55628985,0.6349501,0.53607821};
+		aside[]={0.69390464,0,0.72006679};
+	};
+};
+binarizationWanted=0;
+sourceName="airStrike";
+addons[]=
+{
+	"A3_Characters_F",
+	"A3_Characters_F_Jets",
+	"A3_Air_F_EPC_Plane_CAS_01",
+	"A3_Modules_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=4;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Characters_F_Jets";
+			name="Arma 3 Jets - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Air_F_EPC";
+			name="Arma 3 Win Episode - Aircraft";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+dlcs[]=
+{
+	"Jets"
+};
+randomSeed=15603102;
+class ScenarioData
+{
+	author="WBTHL";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=5;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={2714.1243,102.59419,953.12695};
+						angles[]={0,5.3608932,0};
+					};
+					side="West";
+					flags=3;
+					class Attributes
+					{
+						name="p1";
+						isPlayer=1;
+					};
+					id=9;
+					type="B_soldier_AAA_F";
+					atlOffset=9.9450912;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=8;
+			atlOffset=9.9450912;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1787.3031,5.5014391,5984.5254};
+						angles[]={0,4.9676785,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="a1D";
+					};
+					id=21;
+					type="B_Fighter_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=21;
+						item1=20;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=19;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CAS";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1583.833,7.880455,4950.1841};
+				angles[]={0,4.9676785,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				fuel=0;
+				name="a1";
+				pylons="PylonRack_1Rnd_Missile_AA_04_F;;PylonMissile_1Rnd_Mk82_F;PylonMissile_1Rnd_Mk82_F;PylonMissile_1Rnd_Mk82_F;PylonMissile_1Rnd_Mk82_F;PylonMissile_1Rnd_Mk82_F;PylonMissile_1Rnd_Mk82_F;;PylonRack_1Rnd_Missile_AA_04_F;";
+			};
+			id=20;
+			type="B_Plane_CAS_01_dynamicLoadout_F";
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={1587.274,5.5,4978.2051};
+			class Attributes
+			{
+				name="tr1";
+				text="Call in Air Strike";
+				onActivation="[] exec ""airStrike.sqf""";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				activationBy="ALPHA";
+				triggerInterval=0;
+			};
+			id=24;
+			type="EmptyDetector";
+		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1595.674,5.5,4968.3638};
+			};
+			name="target";
+			id=25;
+			type="Logic";
+		};
+	};
+};
