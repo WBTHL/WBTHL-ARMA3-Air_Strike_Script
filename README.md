@@ -1,1 +1,1 @@
-# WBTHL-ARMA3-Air_Strike_Script
+# WBTHL's ARMA3 Air Strike Script
